@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Profesional - Índice</title>
+    <style>
+        /* Estilos globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #f4f4f4;
+            line-height: 1.6;
+            background: linear-gradient(to bottom, #1a1a1a, #510296);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Cabecera */
+        .header {
+            background: linear-gradient(to bottom, #280431, #000000);
+            color: rgb(203, 138, 241);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        /* Menú de navegación */
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            color: rgb(194, 141, 255);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #00b4d8;
+        }
+
+        /* Sección principal */
+        .section {
+            flex: 1;
+            display: flex;
+            gap: 40px; /* Espacio mayor entre los elementos */
+            padding: 20px;
+        }
+
+        .section-content {
+            flex: 1;
+            text-align: left; /* Alineación a la izquierda */
+            max-width: 600px; /* Limitar el ancho del texto */
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 50%; /* Imagen ocupa todo el espacio disponible */
+            height: auto;
+            object-fit: cover; /* Mantiene la proporción de la imagen */
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #0078d4;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #f4f4f4;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        ul li a {
+            color: #0078d4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #00b4d8;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+            margin-top: auto;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://iesbelen.org/wp-content/uploads/2022/06/cropped-logo-grande-sin-fondo.png" alt="IES Belén" class="logo">
+        <h1>Página Profesional</h1>
+        <nav class="nav-menu">
+            <a href="index.html">Índice</a>
+            <a href="teoria.html">Teoría</a>
+            <a href="informacion.html">Información Adicional</a>
+            <a href="contactos.html">Contactos</a>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="section-content">
+            <h2>Índice</h2>
+            <p>Bienvenido a nuestra página. A continuación, puedes navegar por nuestras diferentes secciones:</p>
+            <ul>
+                <li><a href="teoria.html"><strong>Teoría:</strong> Información detallada sobre el tema.</a></li>
+                <li><a href="informacion.html"><strong>Información Adicional:</strong> Recursos y ejemplos relacionados.</a></li>
+                <li><a href="contactos.html"><strong>Contactos:</strong> Cómo comunicarte con nosotros.</a></li>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="https://iesbelen.org/wp-content/uploads/2022/06/cropped-logo-grande-sin-fondo.png" alt="Imagen de ejemplo">
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Página Profesional. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
